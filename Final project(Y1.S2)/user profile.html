@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="user_style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="brand">
+        <a href="home page.html"><img src="images/AUC_LOGO.jpg" alt="profile" class="logo"></a>
+    </div>
+    <center>
+    <ul class="nav-links">
+        <li><a href="home page.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="T&C.html">Terms & Conditions</a></li>
+        <li><a href="Help Center.html">Help Center</a></li>
+        <li><a href="Contact Us.html">Contact us</a></li>
+        <li><a href="cartpage.html">Updates</a></li>
+        <li><a href="user profile.html">
+            <img src="images/icon.png" alt="Profile">
+        </a></li>
+    </ul>
+</center>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</nav>
+<script>
+    const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+
+burger.addEventListener('click', () => {
+navLinks.classList.toggle('nav-active');
+
+links.forEach((link) => {
+link.classList.toggle('toggle');
+});
+});
+
+    </script>
+<div class="profile-container">
+    <div class="profile-header">
+      <h2>John Doe</h2>
+      <p>Member since 2020</p>
+    </div>
+    <div class="profile-avatar">
+      <img src="images/download.png" alt="John Doe">
+    </div>
+    <div class="profile-info">
+      <ul>
+        <li>
+          <span>Email:</span>
+          <p>johndoe@example.com</p>
+        </li>
+        <li>
+          <span>Phone:</span>
+          <p>123-456-7890</p>
+        </li>
+        <li>
+          <span>Location:</span>
+          <p>New York, USA</p>
+        </li>
+      </ul>
+    </div>
+    <div class="profile-stats">
+      <ul>
+        <li>
+          <span>Auctions Won:</span>
+          <p>10</p>
+        </li>
+        <li>
+          <span>Auctions Participated:</span>
+          <p>20</p>
+        </li>
+        <li>
+          <span>Feedback Rating:</span>
+          <p>4.5/5</p>
+        </li>
+      </ul>
+    </div>
+    <div class="profile-actions">
+      <button><a href="Edit Profile.html">Edit Profile</a></button>
+      <button>View Auctions</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3><a href="aboutUs.html">About Us</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="T&C.html">Terms & Conditions</a></li>
+                    <li><a href="PV&PL.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+  
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Online Auction. All Rights Reserved.</p>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>

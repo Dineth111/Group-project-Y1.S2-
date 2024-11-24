@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #000000, #333333);
+}
+
+.signup-box {
+  width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #ffcc00;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.signup-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-box input[type="text"],
+.signup-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.signup-box input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #ff9900;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.signup-box input[type="submit"]:hover {
+  background: #e68a00;
+}
+
+.signup-box .login-link {
+  text-align: center;
+}
+
+.signup-box .login-link a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+footer {
+    background-color: #333333a3;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    width: 25%;
+    margin: 20px;
+  }
+  
+  .footer-column h3 {
+    margin-top: 0;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    color: #ccc;
+  }
+  
+  .footer-copyright {
+    background-color: #333333f8;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+  }
+  
+  
+  .yellow-box {
+    height: 50px;
+    background-color: #333333a3;
+    
+  }
+
+  .signup-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
