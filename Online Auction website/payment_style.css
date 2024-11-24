@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* Yellow gradient background */
+    background: linear-gradient(to bottom, #F7DC6F, #FFD700);
+    background-size: 100% 100vh;
+    height: 100vh;
+    margin: 0;
+  }
+
+.nav-links li img {
+    
+    height: 50px;
+    margin-right: 50px;
+    vertical-align: middle;
+}
+
+.logo {
+    /* adjust the width to your liking */
+   height: 50px; /* adjust the height to your liking */  /* add some margin to position the logo correctly */
+   float: left; /* make the logo float to the left */
+}
+
+nav {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+   .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+   .nav-links.nav-active {
+        transform: translateX(0);
+    }
+
+   .nav-links li {
+        padding: 10px;
+    }
+
+   .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+   .line {
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+        margin: 5px auto;
+    }
+}
+h2{
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.navbar{
+    background: lightskyblue;
+    font-family: calibri;
+    padding-right: 15%;
+    
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a{
+    font-size: 30px;
+    font-weight: 600;
+    color: #f2f2f2;
+    margin-left: 15px;
+}
+
+li{
+    list-style: name;
+    display: inline-block;
+}
+li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+button{
+    background-color: black;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+}
+button a{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+.row{
+    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 16px;
+}
+
+.col-25{
+    flex: 25%;
+}
+.col-50{
+    flex: 50%;
+}
+.col-75{
+    flex: 75%;
+}
+.col-25,
+.col-50,
+.col-75{
+    padding: 16px;
+}
+
+.container{
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+input[type=text]{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container{
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 24px;
+}
+.btn{
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.btn:hover{
+    background-color: #45a049;
+}
+
+a{
+    color: #2196f3;
+}
+hr{
+    border: 1px solid lightgray;
+}
+
+span.price{
+    float: right;
+    color: gray;
+}
+@media(max-width: 800px){
+    .row{
+        flex-direction: column-reverse;
+    }
+    .col-25{
+        margin-bottom: 20px;
+    }
+}
+
+
+footer {
+    background-color: #2a2a2a;
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    width: 25%;
+    margin: 20px;
+  }
+  
+  .footer-column h3 {
+    margin-top: 0;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column a:hover {
+    color: #ccc;
+  }
+  
+  .footer-copyright {
+    background-color: #333333f8;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+  }
+  
+  

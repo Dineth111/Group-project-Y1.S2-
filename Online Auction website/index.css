@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.logo_1 {
+  width: 70%; 
+  height: auto; 
+  margin-bottom: 50px; 
+  margin-top: 50px;
+  
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #ffd700;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-bottom: 200px; 
+}
+
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
+footer {
+  background-color: #333333a3;
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  width: 25%;
+  margin: 20px;
+}
+
+.footer-column h3 {
+  margin-top: 0;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #ccc;
+}
+
+.footer-copyright {
+  background-color: #333333f8;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
+
+
+.yellow-box {
+  height: 50px;
+  background-color: #333333a3;
+  
+}

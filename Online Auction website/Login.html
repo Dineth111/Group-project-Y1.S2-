@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login_style.css">
+</head>
+<body>
+    <div class="yellow-box"></div>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="login.php" method="post" id="login-form">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <label for="remember-me" class="remember-me">
+                <input type="checkbox" id="remember-me" name="remember-me"> Remember Me
+            </label>
+            <input type="submit" value="Login">
+        </form>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="create-account">
+            <p>Don't have an Account? <a href="signup.html">Create an Account</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Basic validation
+            if (username.trim() === '' || password.trim() === '') {
+                alert("Please enter both username and password.");
+                event.preventDefault();
+            }
+        });
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3><a href="aboutUs.html">About Us</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="T&C.html">Terms & Conditions</a></li>
+                    <li><a href="PV&PL.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+  
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Online Auction. All Rights Reserved.</p>
+        </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

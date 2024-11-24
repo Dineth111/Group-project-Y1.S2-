@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="signup_style.css">
+</head>
+<body>
+    <div class="yellow-box"></div>
+    <div class="signup-box">
+        <h2>Sign Up</h2>
+        <form action="#" method="post" id="signup-form">
+            <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+            <input type="text" name="email" id="email" placeholder="Email" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+            <select name="user_type" id="user_type" required>
+                <option value="">Select User Type</option>
+                <option value="Seller">Seller</option>
+                <option value="Buyer">Buyer</option>
+            </select>
+            <input type="submit" value="Sign Up">
+        </form>
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            var fullname = document.getElementById("fullname").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirm_password = document.getElementById("confirm_password").value;
+            var user_type = document.getElementById("user_type").value;
+
+            // Basic validation
+            if (fullname.trim() === '' || email.trim() === '' || password.trim() === '' || confirm_password.trim() === '' || user_type.trim() === '') {
+                alert("Please fill in all fields.");
+                event.preventDefault();
+            } else if (password !== confirm_password) {
+                alert("Passwords do not match.");
+                event.preventDefault();
+            }
+        });
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3><a href="aboutUs.html">About Us</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="Contact Us.html">Contact Us</a></li>
+                    <li><a href="T&C.html">Terms & Conditions</a></li>
+                    <li><a href="PV&PL.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Online Auction. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
